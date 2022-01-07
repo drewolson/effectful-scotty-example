@@ -41,17 +41,19 @@ currentCount = send CurrentCount
 incrementCount :: (RequestCounter :> es) => Eff es ()
 incrementCount = send IncrementCount
 
-runRequestCounterIO :: (Reader (TVar Integer) :> es, IOE :> es) => Eff (RequestCounter : es) a -> Eff es a
+type Counter = TVar Integer
+
+runRequestCounterIO :: (Reader Counter :> es, IOE :> es) => Eff (RequestCounter : es) a -> Eff es a
 runRequestCounterIO = interpret $ const \case
   CurrentCount -> do
-    count <- Reader.ask
-    UIO.atomically $ UIO.readTVar count
+    counter <- Reader.ask
+    UIO.atomically $ UIO.readTVar counter
   IncrementCount -> do
-    count <- Reader.ask
-    UIO.atomically $ UIO.modifyTVar count (+ 1)
+    counter <- Reader.ask
+    UIO.atomically $ UIO.modifyTVar counter (+ 1)
 
-runIO :: TVar Integer -> Eff '[RequestCounter, Reader (TVar Integer), IOE] a -> IO a
-runIO count = runEff . Reader.runReader count . runRequestCounterIO
+runIO :: Counter -> Eff '[RequestCounter, Reader Counter, IOE] a -> IO a
+runIO counter = runEff . Reader.runReader counter . runRequestCounterIO
 
 router :: (MonadIO (Eff es), RequestCounter :> es) => ScottyT Text (Eff es) ()
 router = do
@@ -63,6 +65,6 @@ router = do
 
 main :: IO ()
 main = do
-  count <- UIO.newTVarIO 0
+  counter <- UIO.newTVarIO 0
 
-  scottyT 3000 (runIO count) router
+  scottyT 3000 (runIO counter) router
