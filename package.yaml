@@ -1,0 +1,58 @@
+name:                fun
+version:             0.1.0.0
+license:             MIT
+
+extra-source-files:
+- README.md
+
+description: Fun
+
+dependencies:
+- base >= 4.7 && < 5
+- effectful
+- transformers
+- scotty
+- unliftio
+- text
+- wai
+
+default-extensions:
+- BlockArguments
+- DataKinds
+- FlexibleContexts
+- GADTs
+- ImportQualifiedPost
+- KindSignatures
+- LambdaCase
+- OverloadedStrings
+- TypeFamilies
+- TypeOperators
+
+library:
+  source-dirs: src
+
+executables:
+  fun-exe:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - fun
+
+tests:
+  fun-test:
+    main:                Spec.hs
+    source-dirs:         test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - fun
+    - hspec
+    - hspec-discover
+    - hspec-wai
+    - QuickCheck
