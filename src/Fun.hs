@@ -5,7 +5,7 @@ where
 
 import Effectful (Eff, IOE, interpret, runEff, type (:>))
 import Fun.RequestCounter (RequestCounter (..))
-import Fun.Router as Router
+import Fun.Router qualified as Router
 import UnliftIO (TVar)
 import UnliftIO qualified as UIO
 import Web.Scotty.Trans (scottyT)
