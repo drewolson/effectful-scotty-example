@@ -3,13 +3,7 @@ module Fun
   )
 where
 
-import Effectful
-  ( Eff,
-    IOE,
-    interpret,
-    runEff,
-    type (:>),
-  )
+import Effectful (Eff, IOE, interpret, runEff, type (:>))
 import Effectful.Reader (Reader)
 import Effectful.Reader qualified as Reader
 import Fun.RequestCounter (RequestCounter (..))
