@@ -1,13 +1,13 @@
-module Test.FunSpec
+module Test.Fun.RouterSpec
   ( spec,
   )
 where
 
 import Effectful (Eff, IOE, interpret, runEff)
-import Fun (RequestCounter (..))
-import Fun qualified
+import Fun.RequestCounter (RequestCounter (..))
+import Fun.Router qualified as Router
 import Network.Wai (Application)
-import Test.Hspec (Spec, describe, it, parallel, shouldBe)
+import Test.Hspec (Spec, describe, it, parallel)
 import Test.Hspec.Wai (get, shouldRespondWith, with)
 import Web.Scotty.Trans (scottyAppT)
 
@@ -16,11 +16,11 @@ runRequestCounterPure = interpret $ const \case
   CurrentCount -> pure 1
   IncrementCount -> pure ()
 
-runTest :: Eff '[RequestCounter, IOE] a -> IO a
-runTest = runEff . runRequestCounterPure
+runIO :: Eff '[RequestCounter, IOE] a -> IO a
+runIO = runEff . runRequestCounterPure
 
 testApp :: IO Application
-testApp = scottyAppT runTest Fun.router
+testApp = scottyAppT runIO Router.router
 
 spec :: Spec
 spec = parallel do

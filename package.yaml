@@ -7,6 +7,14 @@ extra-source-files:
 
 description: Fun
 
+ghc-options:
+- -Werror
+- -Wall
+- -Wcompat
+- -Wincomplete-record-updates
+- -Wincomplete-uni-patterns
+- -Wredundant-constraints
+
 dependencies:
 - base >= 4.7 && < 5
 - effectful
