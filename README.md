@@ -1,4 +1,5 @@
-An example of using effectful + scotty
+A simple example of using [effectful](https://github.com/arybczak/effectful)
+with [scotty](https://github.com/scotty-web/scotty).
 
 ```
 stack run
