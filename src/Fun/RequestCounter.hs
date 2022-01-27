@@ -5,7 +5,8 @@ module Fun.RequestCounter
   )
 where
 
-import Effectful (Dispatch (..), DispatchOf, Eff, Effect, send, type (:>))
+import Effectful (Dispatch (..), DispatchOf, Eff, Effect, type (:>))
+import Effectful.Dispatch.Dynamic (send)
 
 data RequestCounter :: Effect where
   CurrentCount :: RequestCounter m Integer

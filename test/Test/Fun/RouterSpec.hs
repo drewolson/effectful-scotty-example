@@ -3,7 +3,8 @@ module Test.Fun.RouterSpec
   )
 where
 
-import Effectful (Eff, IOE, interpret, runEff)
+import Effectful (Eff, IOE, runEff)
+import Effectful.Dispatch.Dynamic (interpret)
 import Fun.RequestCounter (RequestCounter (..))
 import Fun.Router qualified as Router
 import Network.Wai (Application)

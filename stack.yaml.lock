@@ -10,13 +10,13 @@ packages:
     version: '0.1'
     git: git@github.com:arybczak/effectful.git
     pantry-tree:
-      size: 1659
-      sha256: 7f56ccb08ae15c4d8d7839a64b50446e7d44f9cd0051f9e145e4553c4018d340
-    commit: 109d44165630321f65ef63ad499690768ab2a19b
+      size: 1642
+      sha256: 98cbe122bba2654c6a93d5f57ae6ba90f042bed6c25d0e3da61f580f3d556144
+    commit: 1e01ac940f755229cff0688814a2b985895ca74e
   original:
     subdir: effectful-core
     git: git@github.com:arybczak/effectful.git
-    commit: 109d44165630321f65ef63ad499690768ab2a19b
+    commit: 1e01ac940f755229cff0688814a2b985895ca74e
 - completed:
     subdir: effectful
     name: effectful
@@ -24,15 +24,15 @@ packages:
     git: git@github.com:arybczak/effectful.git
     pantry-tree:
       size: 2232
-      sha256: d66418b4224dfa65a7649a43f271322367635fc62b0be24abd8ab267176c01ce
-    commit: 109d44165630321f65ef63ad499690768ab2a19b
+      sha256: 9d17d5424c7152d0d7516fb33515d9585b2b7530a2625e73681cbafe859d16cd
+    commit: 1e01ac940f755229cff0688814a2b985895ca74e
   original:
     subdir: effectful
     git: git@github.com:arybczak/effectful.git
-    commit: 109d44165630321f65ef63ad499690768ab2a19b
+    commit: 1e01ac940f755229cff0688814a2b985895ca74e
 snapshots:
 - completed:
-    size: 586110
-    url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/18/21.yaml
-    sha256: ce4fb8d44f3c6c6032060a02e0ebb1bd29937c9a70101c1517b92a87d9515160
-  original: lts-18.21
+    size: 587819
+    url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/18/23.yaml
+    sha256: 7f69bb29a57495586e7e3ed31ecc59c0d2c959cb23bd52b71ca676f254c9beb1
+  original: lts-18.23

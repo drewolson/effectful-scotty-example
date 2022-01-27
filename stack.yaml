@@ -1,11 +1,11 @@
-resolver: lts-18.21
+resolver: lts-18.23
 
 packages:
 - .
 
 extra-deps:
 - git: git@github.com:arybczak/effectful.git
-  commit: 109d44165630321f65ef63ad499690768ab2a19b
+  commit: 1e01ac940f755229cff0688814a2b985895ca74e
   subdirs:
   - effectful-core
   - effectful

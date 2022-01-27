@@ -3,9 +3,10 @@ module Fun
   )
 where
 
-import Effectful (Eff, IOE, interpret, runEff, type (:>))
+import Effectful (Eff, IOE, runEff, type (:>))
 import Effectful.Concurrent.STM (Concurrent, TVar)
 import Effectful.Concurrent.STM qualified as STM
+import Effectful.Dispatch.Dynamic (interpret)
 import Fun.RequestCounter (RequestCounter (..))
 import Fun.Router qualified as Router
 import UnliftIO qualified as UIO
