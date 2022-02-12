@@ -1,11 +1,11 @@
-resolver: lts-18.23
+resolver: lts-18.24
 
 packages:
 - .
 
 extra-deps:
-- git: git@github.com:arybczak/effectful.git
-  commit: 1e01ac940f755229cff0688814a2b985895ca74e
+- git: git@github.com:haskell-effectful/effectful.git
+  commit: cc25dc9ef4d06c8df391ede07642d3bbfbab6aca
   subdirs:
   - effectful-core
   - effectful

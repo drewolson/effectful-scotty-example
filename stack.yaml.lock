@@ -8,31 +8,31 @@ packages:
     subdir: effectful-core
     name: effectful-core
     version: '0.1'
-    git: git@github.com:arybczak/effectful.git
+    git: git@github.com:haskell-effectful/effectful.git
     pantry-tree:
-      size: 1642
-      sha256: 98cbe122bba2654c6a93d5f57ae6ba90f042bed6c25d0e3da61f580f3d556144
-    commit: 1e01ac940f755229cff0688814a2b985895ca74e
+      size: 1804
+      sha256: a755c2a7139f9adc7b26ed693bfa6b4748102ac38386ecad4243e1d2e11bc49b
+    commit: cc25dc9ef4d06c8df391ede07642d3bbfbab6aca
   original:
     subdir: effectful-core
-    git: git@github.com:arybczak/effectful.git
-    commit: 1e01ac940f755229cff0688814a2b985895ca74e
+    git: git@github.com:haskell-effectful/effectful.git
+    commit: cc25dc9ef4d06c8df391ede07642d3bbfbab6aca
 - completed:
     subdir: effectful
     name: effectful
     version: '0.1'
-    git: git@github.com:arybczak/effectful.git
+    git: git@github.com:haskell-effectful/effectful.git
     pantry-tree:
       size: 2232
-      sha256: 9d17d5424c7152d0d7516fb33515d9585b2b7530a2625e73681cbafe859d16cd
-    commit: 1e01ac940f755229cff0688814a2b985895ca74e
+      sha256: 848e29638a31577695233a13fd3dbb0b5d0ed59cfa9d8af6b7db7f6037947215
+    commit: cc25dc9ef4d06c8df391ede07642d3bbfbab6aca
   original:
     subdir: effectful
-    git: git@github.com:arybczak/effectful.git
-    commit: 1e01ac940f755229cff0688814a2b985895ca74e
+    git: git@github.com:haskell-effectful/effectful.git
+    commit: cc25dc9ef4d06c8df391ede07642d3bbfbab6aca
 snapshots:
 - completed:
-    size: 587819
-    url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/18/23.yaml
-    sha256: 7f69bb29a57495586e7e3ed31ecc59c0d2c959cb23bd52b71ca676f254c9beb1
-  original: lts-18.23
+    size: 587821
+    url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/18/24.yaml
+    sha256: 06d844ba51e49907bd29cb58b4a5f86ee7587a4cd7e6cf395eeec16cba619ce8
+  original: lts-18.24
