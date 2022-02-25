@@ -5,7 +5,8 @@ packages:
 
 extra-deps:
 - git: git@github.com:haskell-effectful/effectful.git
-  commit: cc25dc9ef4d06c8df391ede07642d3bbfbab6aca
+  commit: 24ea29a1344e3f821fbce3ea5f7c4e25d4ea1c3d
   subdirs:
   - effectful-core
+  - effectful-th
   - effectful

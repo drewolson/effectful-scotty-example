@@ -14,13 +14,13 @@ import Web.Scotty.Trans (scottyT)
 
 type Counter = TVar Integer
 
-runRequestCounterIO :: (Concurrent :> es) => Counter -> Eff (RequestCounter : es) a -> Eff es a
-runRequestCounterIO counter = interpret $ const \case
+runRequestCounterConcurrent :: (Concurrent :> es) => Counter -> Eff (RequestCounter : es) a -> Eff es a
+runRequestCounterConcurrent counter = interpret $ const \case
   CurrentCount -> STM.readTVarIO counter
   IncrementCount -> STM.atomically $ STM.modifyTVar counter (+ 1)
 
 runIO :: Counter -> Eff '[RequestCounter, Concurrent, IOE] a -> IO a
-runIO counter = runEff . STM.runConcurrent . runRequestCounterIO counter
+runIO counter = runEff . STM.runConcurrent . runRequestCounterConcurrent counter
 
 main :: IO ()
 main = do

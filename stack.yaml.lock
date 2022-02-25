@@ -11,25 +11,38 @@ packages:
     git: git@github.com:haskell-effectful/effectful.git
     pantry-tree:
       size: 1804
-      sha256: a755c2a7139f9adc7b26ed693bfa6b4748102ac38386ecad4243e1d2e11bc49b
-    commit: cc25dc9ef4d06c8df391ede07642d3bbfbab6aca
+      sha256: 4579c5d2c2e365f45080925bed3cc7469109d53b4bfe68d80e8bd00b59c96ba3
+    commit: 24ea29a1344e3f821fbce3ea5f7c4e25d4ea1c3d
   original:
     subdir: effectful-core
     git: git@github.com:haskell-effectful/effectful.git
-    commit: cc25dc9ef4d06c8df391ede07642d3bbfbab6aca
+    commit: 24ea29a1344e3f821fbce3ea5f7c4e25d4ea1c3d
+- completed:
+    subdir: effectful-th
+    name: effectful-th
+    version: '0.1'
+    git: git@github.com:haskell-effectful/effectful.git
+    pantry-tree:
+      size: 278
+      sha256: d8eda4b6bf216a7c08644884f818aafaafedd744b4bc9f637d0059f665cd71b8
+    commit: 24ea29a1344e3f821fbce3ea5f7c4e25d4ea1c3d
+  original:
+    subdir: effectful-th
+    git: git@github.com:haskell-effectful/effectful.git
+    commit: 24ea29a1344e3f821fbce3ea5f7c4e25d4ea1c3d
 - completed:
     subdir: effectful
     name: effectful
     version: '0.1'
     git: git@github.com:haskell-effectful/effectful.git
     pantry-tree:
-      size: 2232
-      sha256: 848e29638a31577695233a13fd3dbb0b5d0ed59cfa9d8af6b7db7f6037947215
-    commit: cc25dc9ef4d06c8df391ede07642d3bbfbab6aca
+      size: 2388
+      sha256: 1a40d89aa248ab90151a9f21c9ae15319d3783f0f74c6bdcea70903dc92f0ba8
+    commit: 24ea29a1344e3f821fbce3ea5f7c4e25d4ea1c3d
   original:
     subdir: effectful
     git: git@github.com:haskell-effectful/effectful.git
-    commit: cc25dc9ef4d06c8df391ede07642d3bbfbab6aca
+    commit: 24ea29a1344e3f821fbce3ea5f7c4e25d4ea1c3d
 snapshots:
 - completed:
     size: 587821

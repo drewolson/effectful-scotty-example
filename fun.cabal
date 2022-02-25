@@ -31,12 +31,15 @@ library
       KindSignatures
       LambdaCase
       OverloadedStrings
+      ScopedTypeVariables
+      TemplateHaskell
       TypeFamilies
       TypeOperators
   ghc-options: -Werror -Wall -Wcompat -Wincomplete-record-updates -Wincomplete-uni-patterns -Wredundant-constraints
   build-depends:
       base >=4.7 && <5
     , effectful
+    , effectful-th
     , scotty
     , text
     , transformers
@@ -59,12 +62,15 @@ executable fun-exe
       KindSignatures
       LambdaCase
       OverloadedStrings
+      ScopedTypeVariables
+      TemplateHaskell
       TypeFamilies
       TypeOperators
   ghc-options: -Werror -Wall -Wcompat -Wincomplete-record-updates -Wincomplete-uni-patterns -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
     , effectful
+    , effectful-th
     , fun
     , scotty
     , text
@@ -90,6 +96,8 @@ test-suite fun-test
       KindSignatures
       LambdaCase
       OverloadedStrings
+      ScopedTypeVariables
+      TemplateHaskell
       TypeFamilies
       TypeOperators
   ghc-options: -Werror -Wall -Wcompat -Wincomplete-record-updates -Wincomplete-uni-patterns -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
@@ -97,6 +105,7 @@ test-suite fun-test
       QuickCheck
     , base >=4.7 && <5
     , effectful
+    , effectful-th
     , fun
     , hspec
     , hspec-discover
