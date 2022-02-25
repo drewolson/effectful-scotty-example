@@ -17,11 +17,11 @@ runRequestCounterPure = interpret $ const \case
   CurrentCount -> pure 1
   IncrementCount -> pure ()
 
-runIO :: Eff '[RequestCounter, IOE] a -> IO a
-runIO = runEff . runRequestCounterPure
+runPure :: Eff '[RequestCounter, IOE] a -> IO a
+runPure = runEff . runRequestCounterPure
 
 testApp :: IO Application
-testApp = scottyAppT runIO Router.router
+testApp = scottyAppT runPure Router.router
 
 spec :: Spec
 spec = parallel do
