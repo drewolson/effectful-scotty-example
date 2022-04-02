@@ -33,6 +33,7 @@ library
       OverloadedStrings
       ScopedTypeVariables
       TemplateHaskell
+      TypeApplications
       TypeFamilies
       TypeOperators
   ghc-options: -Werror -Wall -Wcompat -Wincomplete-record-updates -Wincomplete-uni-patterns -Wredundant-constraints
@@ -64,6 +65,7 @@ executable fun-exe
       OverloadedStrings
       ScopedTypeVariables
       TemplateHaskell
+      TypeApplications
       TypeFamilies
       TypeOperators
   ghc-options: -Werror -Wall -Wcompat -Wincomplete-record-updates -Wincomplete-uni-patterns -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
@@ -98,6 +100,7 @@ test-suite fun-test
       OverloadedStrings
       ScopedTypeVariables
       TemplateHaskell
+      TypeApplications
       TypeFamilies
       TypeOperators
   ghc-options: -Werror -Wall -Wcompat -Wincomplete-record-updates -Wincomplete-uni-patterns -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N

@@ -11,12 +11,12 @@ packages:
     git: git@github.com:haskell-effectful/effectful.git
     pantry-tree:
       size: 1804
-      sha256: ccba50965ac9b743cd86d5abe700d368114c02e01856a9858f304d873fd8fed8
-    commit: 9034e8f572d99cd7abdd8ad32aef6bc3ce342e46
+      sha256: a1503b92abe3dd0dc795a82ed2e61abbf9b075b4b17fb6d1a93fcb6fd3abdde5
+    commit: 5d7ed78936d2811792c12ef9532caaa1fdeb1db9
   original:
     subdir: effectful-core
     git: git@github.com:haskell-effectful/effectful.git
-    commit: 9034e8f572d99cd7abdd8ad32aef6bc3ce342e46
+    commit: 5d7ed78936d2811792c12ef9532caaa1fdeb1db9
 - completed:
     subdir: effectful-th
     name: effectful-th
@@ -24,28 +24,28 @@ packages:
     git: git@github.com:haskell-effectful/effectful.git
     pantry-tree:
       size: 278
-      sha256: 8bc0d2e21149fb1d6ee0e7f938d7516b1a585e29b2d0207046d40edd4ee61795
-    commit: 9034e8f572d99cd7abdd8ad32aef6bc3ce342e46
+      sha256: fab2f748d4d1d7783eb9a9755cec5b4505a6dcf0bf4ed8240585667a8e8dcf61
+    commit: 5d7ed78936d2811792c12ef9532caaa1fdeb1db9
   original:
     subdir: effectful-th
     git: git@github.com:haskell-effectful/effectful.git
-    commit: 9034e8f572d99cd7abdd8ad32aef6bc3ce342e46
+    commit: 5d7ed78936d2811792c12ef9532caaa1fdeb1db9
 - completed:
     subdir: effectful
     name: effectful
     version: '0.1'
     git: git@github.com:haskell-effectful/effectful.git
     pantry-tree:
-      size: 2388
-      sha256: d224083ef160b8b89e73fdb9d80819a74f91bf920642559396f9021e0e2ae08f
-    commit: 9034e8f572d99cd7abdd8ad32aef6bc3ce342e46
+      size: 2506
+      sha256: 752021370b9bcd7fc11e133eab98eb02fdff766f4dbf5e5c0db62b12347c4a10
+    commit: 5d7ed78936d2811792c12ef9532caaa1fdeb1db9
   original:
     subdir: effectful
     git: git@github.com:haskell-effectful/effectful.git
-    commit: 9034e8f572d99cd7abdd8ad32aef6bc3ce342e46
+    commit: 5d7ed78936d2811792c12ef9532caaa1fdeb1db9
 snapshots:
 - completed:
-    size: 590102
-    url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/18/27.yaml
-    sha256: 79a786674930a89301b0e908fad2822a48882f3d01486117693c377b8edffdbe
-  original: lts-18.27
+    size: 617355
+    url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/19/1.yaml
+    sha256: cbd5e8593869445794924668479b5bd9f1738d075898623dceacc13b2576b6e3
+  original: lts-19.1

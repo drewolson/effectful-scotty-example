@@ -36,6 +36,7 @@ default-extensions:
 - OverloadedStrings
 - ScopedTypeVariables
 - TemplateHaskell
+- TypeApplications
 - TypeFamilies
 - TypeOperators
 
