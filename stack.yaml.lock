@@ -5,47 +5,29 @@
 
 packages:
 - completed:
-    subdir: effectful-core
-    name: effectful-core
-    version: '0.1'
-    git: git@github.com:haskell-effectful/effectful.git
+    hackage: effectful-1.0.0.0@sha256:2bd7706a82eb694d4801e194e22078b9d17de0df37d895014a94f58ca72fc493,6272
     pantry-tree:
-      size: 1804
-      sha256: c868c7f2274656445b783e0bdafd942f92135583679c7cbe5a1f6ddefd892aa2
-    commit: ba4798f1eb540d9b4d13a3463f79ce0633cbb656
+      size: 2490
+      sha256: c7f828a1c06bc535c0ee30837d122f3d243bd6e7e652d17ba739d9c61b032b83
   original:
-    subdir: effectful-core
-    git: git@github.com:haskell-effectful/effectful.git
-    commit: ba4798f1eb540d9b4d13a3463f79ce0633cbb656
+    hackage: effectful-1.0.0.0
 - completed:
-    subdir: effectful-th
-    name: effectful-th
-    version: '0.1'
-    git: git@github.com:haskell-effectful/effectful.git
+    hackage: effectful-core-1.0.0.0@sha256:04db3df6e435b1df037b63064e3b1bd3f7f915785b4d1b2a9f632f9368821fa2,3675
     pantry-tree:
-      size: 278
-      sha256: fab2f748d4d1d7783eb9a9755cec5b4505a6dcf0bf4ed8240585667a8e8dcf61
-    commit: ba4798f1eb540d9b4d13a3463f79ce0633cbb656
+      size: 1854
+      sha256: 671032384f225a7c74d450393769ea68c710f6089069324beeb74b8d23a33449
   original:
-    subdir: effectful-th
-    git: git@github.com:haskell-effectful/effectful.git
-    commit: ba4798f1eb540d9b4d13a3463f79ce0633cbb656
+    hackage: effectful-core-1.0.0.0
 - completed:
-    subdir: effectful
-    name: effectful
-    version: '0.1'
-    git: git@github.com:haskell-effectful/effectful.git
+    hackage: effectful-th-1.0.0.0@sha256:46842eeea2ca1ca2ab8a86302de84ec1367f4cb047e49256f386aec123b7f82b,2428
     pantry-tree:
-      size: 2506
-      sha256: 6f41067ad1cd0cb995b188b763bbc2cf689ba9efb0ecc0a7574e197d0c6c05b9
-    commit: ba4798f1eb540d9b4d13a3463f79ce0633cbb656
+      size: 327
+      sha256: 9b65d503d6e086219a551800356b773c3ee8a541b83d1a7264648365eeb48545
   original:
-    subdir: effectful
-    git: git@github.com:haskell-effectful/effectful.git
-    commit: ba4798f1eb540d9b4d13a3463f79ce0633cbb656
+    hackage: effectful-th-1.0.0.0
 snapshots:
 - completed:
-    size: 618884
-    url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/19/7.yaml
-    sha256: 57d4ce67cc097fea2058446927987bc1f7408890e3a6df0da74e5e318f051c20
-  original: lts-19.7
+    size: 618952
+    url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/19/15.yaml
+    sha256: 82e5ccb47b068521de4055034e8aa278eab430b586881d9cc29ba8b382ce3253
+  original: lts-19.15
