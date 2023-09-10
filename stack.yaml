@@ -1,9 +1,4 @@
-resolver: lts-19.15
+resolver: lts-21.11
 
 packages:
 - .
-
-extra-deps:
-- effectful-1.0.0.0
-- effectful-core-1.0.0.0
-- effectful-th-1.0.0.0
