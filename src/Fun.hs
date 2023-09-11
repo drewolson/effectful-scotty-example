@@ -16,9 +16,10 @@ type Counter = TVar Integer
 
 runRequestCounterConcurrent :: (IOE :> es) => Counter -> Eff (RequestCounter : es) a -> Eff es a
 runRequestCounterConcurrent counter =
-  reinterpret STM.runConcurrent $ const \case
-    CurrentCount -> STM.readTVarIO counter
-    IncrementCount -> STM.atomically $ STM.modifyTVar counter (+ 1)
+  reinterpret STM.runConcurrent $ \_ -> \eff ->
+    case eff of
+      CurrentCount -> STM.readTVarIO counter
+      IncrementCount -> STM.atomically $ STM.modifyTVar counter (+ 1)
 
 runIO :: Counter -> Eff '[RequestCounter, IOE] a -> IO a
 runIO counter = runEff . runRequestCounterConcurrent counter

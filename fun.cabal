@@ -1,6 +1,6 @@
 cabal-version: 1.12
 
--- This file has been generated from package.yaml by hpack version 0.34.4.
+-- This file has been generated from package.yaml by hpack version 0.35.2.
 --
 -- see: https://github.com/sol/hpack
 
@@ -23,17 +23,9 @@ library
   hs-source-dirs:
       src
   default-extensions:
-      BlockArguments
       DataKinds
-      FlexibleContexts
-      GADTs
-      ImportQualifiedPost
-      KindSignatures
-      LambdaCase
       OverloadedStrings
-      ScopedTypeVariables
       TemplateHaskell
-      TypeApplications
       TypeFamilies
       TypeOperators
   ghc-options: -Werror -Wall -Wcompat -Wincomplete-record-updates -Wincomplete-uni-patterns -Wredundant-constraints
@@ -46,7 +38,7 @@ library
     , transformers
     , unliftio
     , wai
-  default-language: Haskell2010
+  default-language: GHC2021
 
 executable fun-exe
   main-is: Main.hs
@@ -55,17 +47,9 @@ executable fun-exe
   hs-source-dirs:
       app
   default-extensions:
-      BlockArguments
       DataKinds
-      FlexibleContexts
-      GADTs
-      ImportQualifiedPost
-      KindSignatures
-      LambdaCase
       OverloadedStrings
-      ScopedTypeVariables
       TemplateHaskell
-      TypeApplications
       TypeFamilies
       TypeOperators
   ghc-options: -Werror -Wall -Wcompat -Wincomplete-record-updates -Wincomplete-uni-patterns -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
@@ -79,7 +63,7 @@ executable fun-exe
     , transformers
     , unliftio
     , wai
-  default-language: Haskell2010
+  default-language: GHC2021
 
 test-suite fun-test
   type: exitcode-stdio-1.0
@@ -90,17 +74,9 @@ test-suite fun-test
   hs-source-dirs:
       test
   default-extensions:
-      BlockArguments
       DataKinds
-      FlexibleContexts
-      GADTs
-      ImportQualifiedPost
-      KindSignatures
-      LambdaCase
       OverloadedStrings
-      ScopedTypeVariables
       TemplateHaskell
-      TypeApplications
       TypeFamilies
       TypeOperators
   ghc-options: -Werror -Wall -Wcompat -Wincomplete-record-updates -Wincomplete-uni-patterns -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
@@ -118,4 +94,4 @@ test-suite fun-test
     , transformers
     , unliftio
     , wai
-  default-language: Haskell2010
+  default-language: GHC2021

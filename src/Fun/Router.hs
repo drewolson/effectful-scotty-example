@@ -13,7 +13,7 @@ import Web.Scotty.Trans (ScottyT, get, html)
 
 router :: (RequestCounter :> es, IOE :> es) => ScottyT Text (Eff es) ()
 router = do
-  get "/" do
+  get "/" $ do
     lift RequestCounter.incrementCount
     count <- lift RequestCounter.currentCount
 

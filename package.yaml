@@ -15,6 +15,8 @@ ghc-options:
 - -Wincomplete-uni-patterns
 - -Wredundant-constraints
 
+language: GHC2021
+
 dependencies:
 - base >= 4.7 && < 5
 - effectful
@@ -26,17 +28,9 @@ dependencies:
 - wai
 
 default-extensions:
-- BlockArguments
 - DataKinds
-- FlexibleContexts
-- GADTs
-- ImportQualifiedPost
-- KindSignatures
-- LambdaCase
 - OverloadedStrings
-- ScopedTypeVariables
 - TemplateHaskell
-- TypeApplications
 - TypeFamilies
 - TypeOperators
 
